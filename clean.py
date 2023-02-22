@@ -26,3 +26,6 @@ if __name__ == '__main__':
 # (4) write the cleaned data to the file specified by the output_file argument.
     cleaned = clean(args.contact_info_file, args.other_info_file)
     cleaned.to_csv(args.output_file, index=False)
+
+# Step 3
+    print("Output file shape:", {cleaned.shape})
